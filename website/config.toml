@@ -1,0 +1,7 @@
+baseurl = "http://opensource.thatmattbone.com/"
+languageCode = "en-us"
+title = "COMP 336, Loyola University Chicago"
+author = "Matt Bone"
+
+[taxonomies]
+  category = "categories"
