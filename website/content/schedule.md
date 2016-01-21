@@ -8,7 +8,7 @@ title = "Schedule"
 
 (subject to change)
 
-* January 20, 2016: [Welcome to Open Source](/lectures/welcome/)
+* January 20, 2016: [Welcome to Open Source](/lectures/welcome/) (homework 1 due January 25, 11:55pm)
 * January 27, 2016
 * February 3, 2016
 * February 10, 2016

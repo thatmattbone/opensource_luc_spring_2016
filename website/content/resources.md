@@ -6,4 +6,5 @@ title = "Resources"
 
 # Resources
 
-* [Markup Examples](https://bitbucket.org/thatmattbone/markup-examples/)
+Coming soon...
+
