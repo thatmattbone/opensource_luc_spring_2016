@@ -12,7 +12,7 @@ title = "Schedule"
 * January 27, 2016: [Version Control and Collaboration Platforms](/lectures/version_control/)
 * February 3, 2016 [Build Systems](/lectures/build_systems) (homework due February 7th, 11:55pm)
 * February 10, 2016 [Licenses](/lectures/licenses)
-* February 17, 2016 [Remote System Management]() Quiz 1
+* February 17, 2016 [Remote System Management](/lectures/remote_systems) Quiz 1
 * February 24, 2016
 * March 2, 2016
 * March 9, 2016: Spring Break, no class
