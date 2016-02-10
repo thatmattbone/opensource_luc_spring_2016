@@ -58,14 +58,24 @@ Douglas Crockford has been causing trouble (good trouble) for years, and it stil
 
 ## GPL & Other Copyleft Licenses
 
+### Linking & the GPL
+
+While the [FSF's position is quite clear](http://www.gnu.org/licenses/old-licenses/gpl-2.0-faq.html#LinkingWithGPL), there is [some controversy](https://en.wikipedia.org/wiki/GNU_General_Public_License#Linking_and_derived_works) regarding linking (static or dynamic) and whether or not that constitutes a derivative work. The [LGPL](http://www.gnu.org/licenses/lgpl-3.0.en.html) was written to handle this case specifically.
+
 ### Afferro
 
-### Violations
+### Contributor Agreements
+contributor agreements, person who holds copyright can change license, dual license software
+* http://en.wikipedia.org/wiki/SCO-Linux_controversies
+
+software while you're working for a company, making life better for others, keeping your job, boosting your resume.
 
 
-## Creative Commons
+# Creative Commons
 
-* flickr controversy
+[Creative Commons](https://creativecommons.org/) is worth a mention here. Instead of dealing with code, creative commons offers customizeable licenses for things like your songs, photographs, artwork, documention, course materials, etc, etc.
+
+As with all things, it's important to think about your license carefully, while they were complying with creative commons license, [flickr caused some controversy](http://www.forbes.com/sites/paulmonckton/2014/12/23/flickr-apologises-over-wall-art/#4d6e71ef6294) by offering prints of other peoples work (work that had been published with a creative commons license allowing commercial use) for sale as wall art prints online.
 
 # Hardware and Licenses
 
@@ -79,7 +89,3 @@ hard copy of license with router
 * http://torquemag.io/2013/03/joomla-war/
 
 
-contributor agreements, person who holds copyright can change license, dual license software
-* http://en.wikipedia.org/wiki/SCO-Linux_controversies
-
-software while you're working for a company, making life better for others, keeping your job, boosting your resume.
