@@ -15,6 +15,7 @@ It's easy to confuse a shell with the operating system, but the shell is really 
 
 So what does a shell do? It sits there, waiting for user input, and lets us control programs in an interative fashion.
 
+It is even fairly straightforward to [implement your own shell](http://www.gnu.org/software/libc/manual/html_node/Implementing-a-Shell.html#Implementing-a-Shell).
 
 ## Job Control
 
@@ -42,7 +43,38 @@ Consult [this page of the bourne shell manual](http://www.gnu.org/software/bash/
 
 ## Environment Variables
 
+Much like command line flags environment variables are a way to configure and influence how a program runs. For example if we want to use emacs to edit our crontab:
+
+```
+EDITOR=emacs contab -l
+```
+
+By default, variables in bash are 'local' to the currently running shell and not passed down to any subprocesses. The `export` built-in changes that behavior:
+
+```
+export EDITOR=emacs
+crontab -l
+```
+
 ## Pipelines & Redirection
+
+[pipelines](https://en.wikipedia.org/wiki/Pipeline_%28Unix%29) are an incredibly handy feature implemented in almost all unix shells.
+
+Here we use `cat` to output the contents of a file and pipe that through `grep`.
+```
+cat /proc/meminfo | grep MemTotal
+```
+
+[Redirection](http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO-3.html#ss3.1) is another capability of almost all shells. It's easy to redirect the output of some command to a file:
+
+```
+ls > ls_out
+```
+
+Redircting stderr is also easy:
+```
+ls /thisfiledoesnotexist 2> ls_errs
+```
 
 ## Overviews of Popular Shells
 
@@ -58,10 +90,14 @@ c shell was invented to more closely match c-style syntax in shell programming. 
 
 ### zsh & fish shell
 
+[zsh](http://www.zsh.org/) and [fish shell](https://fishshell.com/) offers some modern conveniences both in terms of interactivity and programming. Both are probably most lauded for their ability to add autocomplete to programs (like git, etc), making life easier on the command line.
+
 ### ash
 
 [ash](https://en.wikipedia.org/wiki/Almquist_shell) is a slimmed down version of bash found on many embedded devices and android devices, too.
 
 # Shell Programming
 
-In additiona to working interactively, most shells are also their own programming langauge, allowing us to write scripts that to all sorts of things.
+In addition to working interactively, most shells are also their own programming langauge, allowing us to write scripts that to all sorts of things. Languages like bash have the things we might expect from fully featured languages like [conditionals](http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO-6.html), [loops](http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO-7.html), and [functions](http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO-8.html).
+
+Bash can be tricky to get your head around and so something like fish shell tries to [emulate the appearance of modern languages](http://fishshell.com/docs/current/tutorial.html#tut_conditionals).
