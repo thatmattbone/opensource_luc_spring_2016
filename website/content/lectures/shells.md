@@ -5,8 +5,7 @@ title: Shells and the command line
 
 # Shells and the command line
 
-Before we start, it's important to note the [difference between a shell and a terminal]( http://unix.stackexchange.com/questions/4126/what-is-the-exact-difference-between-a-terminal-a-shell-a-tty-and-a-con).
-* Terminals in detail: http://www.linusakesson.net/programming/tty/
+Before we start, it's important to note the [difference between a shell and a terminal]( http://unix.stackexchange.com/questions/4126/what-is-the-exact-difference-between-a-terminal-a-shell-a-tty-and-a-con). Think of a terminal as a hardware device connected to a machine and a shell as the program running on that machine interpretting the commands. For information about terminals in detail: http://www.linusakesson.net/programming/tty/
 
 
 ## A Shell is Just a Program
