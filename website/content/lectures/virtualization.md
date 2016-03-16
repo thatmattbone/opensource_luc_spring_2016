@@ -12,14 +12,16 @@ Virtualization is a broad topic that becomes more relevant to open source comput
 First, let's talk a little bit about emulators [which are a slightly different beast than virtualization software.](http://www.computerworld.com/article/2551154/virtualization/emulation-or-virtualization-.html)
 
 * [bochs](http://bochs.sourceforge.net/) is an older project that emulates x86 cpus. It's interesting to [read about the internals](http://bochs.sourceforge.net/How%20the%20Bochs%20works%20under%20the%20hood%202nd%20edition.pdf) and discover how the hardware is emulated with software.
-* http://www.hercules-390.eu/
+* [Hercules Mainframe Emulator](http://www.hercules-390.org/)
 * [qemu](http://wiki.qemu.org/Main_Page) is a particularly interesting project that dances on the border between virtualization and emulation. While it's able to [strictly emulate a wide variety of systems in several modes](http://qemu.weilnetz.de/qemu-doc.html#intro_005ffeatures), qemu is also capable of [using kvm](http://wiki.qemu.org/KVM) to provide virtualization and improve performance.
 
 ## Virtualization
 
-http://wiki.xenproject.org/wiki/Xen_Project_Software_Overview
-http://wiki.xenproject.org/wiki/Dom0_Kernels_for_Xen
-https://en.wikipedia.org/wiki/X86_virtualization
+Virtualization lets us run different (instances or actually different) operating systems on the same physical hardware. Let's look at [xen](http://www.xenproject.org/), the leader of virtualization in the open source space.
+
+* The [xen project software overview](http://wiki.xenproject.org/wiki/Xen_Project_Software_Overview) gives us some really great basics about the project and how it works.
+* A [dom0](http://wiki.xenproject.org/wiki/Dom0_Kernels_for_Xen) kernel is required for management of guests.
+* While [virtualization in the x86 world](https://en.wikipedia.org/wiki/X86_virtualization) didn't really exist until 2005, it is now a thing.
 
 (as a total aside, this [piece from the xen](http://www.linux.com/news/enterprise/systems-management/866433-open-source-security-process-part-3-are-security-practices-robust-enough-in-the-cloud-era) is an interesting consideration of security in the open source world now that cloud computing is so prevalent)
 
@@ -27,9 +29,9 @@ https://en.wikipedia.org/wiki/X86_virtualization
 
 Like we discussed extensively in the lecture on remote system management, services like ec2, DigitalOcean, Linode, and scores of others give anyone the ability to spin up servers 'in the cloud'. Under the hood most of these rely on Xen or something similar. Because it's common to run Linux or FreeBSD on these cloud servers, it's easy to argue that more folks use and benefit from open source now more than ever. Even if your average developer is running Mac OS or Windows on his or her machine, odds are they end up dealing with some open source software running their code at some point. Likewise, the technologies in the next section make it easy for developers to work off a common baseline, a system in a known state, to simplify reproducing bugs, having repeatable builds, testing across environments, etc.
 
-## webdev, networking stuff
+## Containers
 
-docker, vagrant, openstack
+Related to virtualization, containers as popularized by [docker](https://www.docker.com/what-docker) uses other facilities to "container-ize" a view of an operating system. So, apps running in a container share the same kernel but have their [own isolated view](https://en.wikipedia.org/wiki/LXC).
 
 # Virtual Machines
 
@@ -41,9 +43,9 @@ While not strictly in the same space as virtualization or emulation, I think it'
 * [http://asm.ow2.org/](asm) is a bytecode manipulation framework that allows instrumentation and other tricks. Consult [the guide](http://download.forge.objectweb.org/asm/asm4-guide.pdf) for lots more information.
 * [cglib](https://github.com/cglib/cglib/wiki) is another tool for working with bytecode.
 
-From [cglib: The missing manual]:
+From [cglib: The missing manual](http://mydailyjava.blogspot.com/2013/11/cglib-missing-manual.html):
 
-  Hibernate uses cglib for example for its generation of dynamic proxies. Instead of returning the full object that you stored ina a database, Hibernate will return you an instrumented version of your stored class that lazily loads some values from the database only when they are requested.
+>>  Hibernate uses cglib for example for its generation of dynamic proxies. Instead of returning the full object that you stored ina a database, Hibernate will return you an instrumented version of your stored class that lazily loads some values from the database only when they are requested.
 
 
 ## Python Bytecode
