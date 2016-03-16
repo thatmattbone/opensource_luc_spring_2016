@@ -16,7 +16,7 @@ title = "Schedule"
 * February 24, 2016: [Shells and the command line](/lectures/shells/)
 * March 2, 2016: [Scripting Languages](/lectures/scripting/)
 * March 9, 2016: Spring Break, no class
-* March 16, 2016: Virtualization
+* March 16, 2016: [Virtualization](/lectures/virtualization)
 * March 23, 2016: Weird Languages
 * March 30, 2016: Weird Operating Systems
 * April 6, 2016: Packaging and Releases
