@@ -32,6 +32,44 @@ Like we discussed extensively in the lecture on remote system management, servic
 docker, vagrant, openstack
 
 # Virtual Machines
-Java virtual machine and bytecode example. Java runtime bytecode manipulation.
 
-Python virtual machine and bytecode example. py.test examples of runtime bytecode manipulation.
+While not strictly in the same space as virtualization or emulation, I think it's nice to look at so-called 'virtual machines' that are used to execute a lot of our code. Java probably did the most to popularize the idea, and its goals were portability and [safety](https://en.wikipedia.org/wiki/Java_virtual_machine#Bytecode_verifier).
+
+## Java Virtual Machine and Java Bytecode
+
+* [Java Bytecode Example](https://en.wikipedia.org/wiki/Java_bytecode#Example)
+* [http://asm.ow2.org/](asm) is a bytecode manipulation framework that allows instrumentation and other tricks. Consult [the guide](http://download.forge.objectweb.org/asm/asm4-guide.pdf) for lots more information.
+* [cglib](https://github.com/cglib/cglib/wiki) is another tool for working with bytecode.
+
+From [cglib: The missing manual]:
+
+  Hibernate uses cglib for example for its generation of dynamic proxies. Instead of returning the full object that you stored ina a database, Hibernate will return you an instrumented version of your stored class that lazily loads some values from the database only when they are requested.
+
+
+## Python Bytecode
+
+Since we consider python to be an "interpretted" language and Java to be a "compiled" language, it might be a little surprising to hear that python has its own VM. Though much less stable, less publicized, and much more dynamic, we can [disassemble](https://docs.python.org/2/library/dis.html) python code and look at the bytecode that's generated. Consider this simple function:
+
+```
+def add_one(x):
+    y = x + 1
+    return y
+```
+
+And the resulting bytecode:
+```
+>>> import dis
+>>> dis.dis(add_one)
+  2           0 LOAD_FAST                0 (x)
+              3 LOAD_CONST               1 (1)
+              6 BINARY_ADD          
+              7 STORE_FAST               1 (y)
+
+  3          10 LOAD_FAST                1 (y)
+             13 RETURN_VALUE        
+>>> 
+```
+
+* [Python VM In Action](https://github.com/python/cpython/blob/2.7/Python/ceval.c#L1199)
+* [Python Interpreter -- 500 lines or less](http://aosabook.org/en/500L/a-python-interpreter-written-in-python.html)
+* [pytest and assertions](https://pytest.org/latest/assert.html#advanced-assertion-introspection) gives a practical example of insane bytecode manipulation
