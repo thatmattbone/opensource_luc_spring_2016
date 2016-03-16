@@ -14,7 +14,7 @@ title = "Schedule"
 * February 10, 2016: [Licenses](/lectures/licenses/)
 * February 17, 2016: [Remote System Management](/lectures/remote_systems/) Quiz 1 (homework 3 due February 23, 11:55pm)
 * February 24, 2016: [Shells and the command line](/lectures/shells/)
-* March 2, 2016: Scripting Languages
+* March 2, 2016: [Scripting Languages](/lectures/scripting/)
 * March 9, 2016: Spring Break, no class
 * March 16, 2016: Virtualization
 * March 23, 2016: Weird Languages
