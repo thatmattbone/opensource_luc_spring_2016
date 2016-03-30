@@ -18,7 +18,7 @@ title = "Schedule"
 * March 9, 2016: Spring Break, no class
 * March 16, 2016: [Virtualization](/lectures/virtualization)
 * March 23, 2016: [Weird Languages](/lectures/weird_languages) & Quiz 2
-* March 30, 2016: Weird Operating Systems
+* March 30, 2016: [Weird Operating Systems](/lectures/weird_operating_systems)
 * April 6, 2016: Packaging and Releases
 * April 13, 2016: Dealing With Data
 * April 20, 2016: Testing
