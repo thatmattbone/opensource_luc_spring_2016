@@ -13,7 +13,8 @@ The [slightly less humble initial announcement](http://www.gnu.org/gnu/initial-a
 
 ### Hurd
 
-Stallman should have used an open source BSD kernel instead of microkernel.
+Hurd is technically the official kernel of the GNU project though it has some [colorful](https://www.gnu.org/software/hurd/hurd.html) history. It's sort of unclear what would have happened had a usable kernel been produced before Linus came on the scene. Regardless, the hurd project is [still kicking](https://www.gnu.org/software/hurd/community/gsoc/project_ideas.html).
+
 
 ### BSDs
 
@@ -22,9 +23,7 @@ Stallman should have used an open source BSD kernel instead of microkernel.
 * [NetBSD](https://www.netbsd.org/)
 * [OpenBSD](http://www.openbsd.org/)
 
-Difference of development styles of the BSD (and three BSDs) and Linux. How this relates to git, etc.
-
-http://www.catb.org/~esr/writings/cathedral-bazaar/
+One interesting thing about the BSDs is that their development style remains more conservative. Thinking about the famous ["The Cathedral and the Bazaar](http://www.catb.org/~esr/writings/cathedral-bazaar/), the BSDs are developed in a much more cathedral-like fashion. Checkout [wikipedia](https://en.wikipedia.org/wiki/The_Cathedral_and_the_Bazaar) for more.
 
 ### Minix
 
@@ -32,17 +31,18 @@ Minix has been around as an educational tool for sometime now, but [minix 3](htt
 
 ### Plan 9
 
+[Plan 9](http://plan9.bell-labs.com/plan9/about.html) was written by many of the same people at bell labs that gave us unix. Plan 9 was intended to be a distributed operating system. We can see some of the ideas in Linux today with a more robust procfs.
+
 ### Redox
 
-https://en.wikipedia.org/wiki/Comparison_of_open-source_operating_systems
+Look down [a list of open source operating](https://en.wikipedia.org/wiki/Comparison_of_open-source_operating_systems) and you'll see one common feature. They're all written in C!
 
-http://www.redox-os.org/
-
-## Not Quite Unix
+[redox](http://www.redox-os.org/) aims to change that by taking on the brave goal of writing a new operating system in a new programming language.
 
 ### Clones of Proprietary Systems
 
 * [wine](https://www.winehq.org/) -- not an operating system but a "compatibility layer" for windows
+* [backwards wine](http://www.hanselman.com/blog/DevelopersCanRunBashShellAndUsermodeUbuntuLinuxBinariesOnWindows10.aspx) just announced today! 3/30/2016
 * [BeOS clone](https://en.wikipedia.org/wiki/Haiku_%28operating_system%29)
 * [AROS](https://en.wikipedia.org/wiki/AROS_Research_Operating_System)
 

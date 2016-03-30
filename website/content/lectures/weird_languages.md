@@ -17,7 +17,7 @@ title: Weird Languages
 
 ## Extension Programming Languages
 
-* [Lua](http://www.lua.org/ )
+* [Lua](http://www.lua.org/) and [bootstrapping a forth in lua](http://angg.twu.net/miniforth-article.html)
 * [Guile](http://www.gnu.org/software/guile/)
 * [tcl](https://www.tcl.tk/) and [tcl the misunderstood](http://antirez.com/articoli/tclmisunderstood.html)
 
