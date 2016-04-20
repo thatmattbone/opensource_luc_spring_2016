@@ -10,3 +10,4 @@ title = "Assignments"
 * Homework 2: [Gopher server](/assignments/homework2/)
 * Homework 3: [Open Source Project Survey](/assignments/homework3/)
 * Homework 4: [Minix & Lua](/assignments/homework4/)
+* [Project](/assignments/project/)

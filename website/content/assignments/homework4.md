@@ -15,6 +15,15 @@ Below are some resources:
 * If you have problems getting the networking up [these](http://wiki.minix3.org/doku.php?id=usersguide:runningonvirtualbox) [resources](https://www.virtualbox.org/manual/ch09.html#nat-adv-dns) might be useful
 * [Lua Release 5.1](http://www.lua.org/ftp/lua-5.1.5.tar.gz)
 
-More details (including submission details and information about the lua script) coming soon...
+## Submission Guidelines
 
+In minix to submit:
+
+```
+curl http://static.thatmattbone.com/submit.sh > submit.sh
+chmod +x submit.sh
+./submit.sh <location_to_lua> <your_name>
+```
+
+Pass the location to lua as the first parameter (i.e. /usr/local/bin/lua) and your name separated by underscores as the second (i.e. matt_bone).
 

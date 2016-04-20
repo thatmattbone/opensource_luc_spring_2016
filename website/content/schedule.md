@@ -20,8 +20,5 @@ title = "Schedule"
 * March 23, 2016: [Weird Languages](/lectures/weird_languages) & Quiz 2
 * March 30, 2016: [Weird Operating Systems](/lectures/weird_operating_systems)
 * April 6, 2016: [Packaging and Releases](/lectures/packaging)
-* April 13, 2016: [Testing](/lectures/testing)
-* April 20, 2016: Dealing With Data
-* April 27, 2016: Project Presentations
-* May 4, 2016: Final Exam
-
+* April 20, 2016: [Testing](/lectures/testing)
+* April 27, 2016: Project Presentations & Final Quiz (Submit projects and Homework 4 by midnight)
